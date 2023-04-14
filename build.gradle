@@ -22,7 +22,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.7.10'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10'
     }
 }
 
@@ -31,13 +31,13 @@ apply plugin: 'java-gradle-plugin'
 
 compileKotlin {
     kotlinOptions {
-        jvmTarget = "11"
+        jvmTarget = JavaVersion.VERSION_17
     }
 }
 
 compileTestKotlin {
     kotlinOptions {
-        jvmTarget = '1.11'
+        jvmTarget = JavaVersion.VERSION_17
     }
 }
 
